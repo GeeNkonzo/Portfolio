@@ -75,14 +75,14 @@ header> h2{
 /* This class is for the main content. The content width and margins are set */
 
 .content{
-    width:80%;
+    width:90%;
     margin:0 auto;
 }
 
 /* Settings for each section including the headings within the sections */
 
 section{
-    width:80%;
+    width:90%;
     /* margin-top: 5%; */
     margin-right: auto; 
     margin-bottom: 0px; 
@@ -94,13 +94,9 @@ section{
 section h1{
     color: black;
     font-size: 40px;
-    text-align: center;
+    text-align: left;
 }
 
-section h2{
-    color: black;
-    text-align: center;
-}
 
 /* Settings for each article */
 
@@ -110,10 +106,19 @@ article{
     padding: 50px;
 }
 
+/* A class for the article containing the skills content */
+
+.skills{
+    margin: 400px auto 0;
+    background-color: white;
+    padding: 50px;
+
+}
+
 /* A class for the article containing the education content */
 
 .education{
-    margin: 500px auto 5%;
+    margin: 0 auto 0;
     background-color: white;
     padding: 50px;
 }
@@ -135,19 +140,27 @@ article{
     margin:5% auto 0;
     float: right;
     background-color: white;
-    padding: 50px;
+    padding: 50px 50px 65px;
     width: 25%;
 
 }
+
+/* Icon styling */
+
+.icon{
+    width:15px;
+}
+
 
 /* Responsive design */
 
 @media only screen and (max-width: 1045px){
     
-    .education{
+    .skills{
         margin: 900px auto 5%;
         background-color: white;
         padding: 50px;
+        text-align: center;
     }
     
     .about{
@@ -155,7 +168,7 @@ article{
         margin: 5% auto;
         background-color: white;
         padding: 50px;
-        width: 80%;
+        width: 90%;
     
     }
     
@@ -163,7 +176,7 @@ article{
     margin: 5% auto;
     background-color: white;
     padding: 50px;
-    width: 80%;
+    width: 90%;
     }   
 }
 
@@ -176,7 +189,7 @@ article{
         background-attachment: fixed;
     }
 
-    .education{
+    .skills{
         margin: 750px auto 5%;
         background-color: white;
         padding: 20px;
