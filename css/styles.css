@@ -1,0 +1,209 @@
+/* Setting the whole webpage margin to zero so that the background 
+images cover the entire page with no extra white space on the sides,
+ top or bottom of the page */
+html{
+    margin:0;
+}
+
+/* Setting the body margin to zero aswell and setting the webpage font family from google fonts */
+
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* This container class serves the purpose of a container and it will be containing the webpage content */
+
+.container{
+    margin: 0px auto;
+    width:100%;
+}
+
+/* The header text alignment and margins are set */
+
+header{
+    margin: 0px auto;
+    border: 0px;
+    text-align: center;
+}
+
+/* The heading font size,padding and other features are set for the text in the header specifically */
+
+header > h1{
+    color: black;
+    font-size: 80px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top:0;
+    padding-top: 5%;
+
+}
+
+header> h2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* The background image for the webpage */
+
+.background{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    width:100%;
+    background-attachment: fixed;
+}
+
+
+/* The banner class is for the header background image */
+
+.banner{
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url('../img/background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height:550px;
+    
+}
+
+.banner h1{
+    opacity: 1;
+}
+
+/* This class is for the main content. The content width and margins are set */
+
+.content{
+    width:80%;
+    margin:0 auto;
+}
+
+/* Settings for each section including the headings within the sections */
+
+section{
+    width:80%;
+    /* margin-top: 5%; */
+    margin-right: auto; 
+    margin-bottom: 0px; 
+    margin-left: auto;
+    padding:50px;
+
+}
+
+section h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+section h2{
+    color: black;
+    text-align: center;
+}
+
+/* Settings for each article */
+
+article{
+    margin: 5% auto;
+    background-color: white;
+    padding: 50px;
+}
+
+/* A class for the article containing the education content */
+
+.education{
+    margin: 500px auto 5%;
+    background-color: white;
+    padding: 50px;
+}
+
+/* A class for the article containing the about content */
+
+.about{
+    margin: 5% auto 0;
+    float: left;
+    background-color: white;
+    padding: 50px;
+    width: 45%;
+
+}
+
+/* A class for the article containing the contact content */
+
+.contact{
+    margin:5% auto 0;
+    float: right;
+    background-color: white;
+    padding: 50px;
+    width: 25%;
+
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 1045px){
+    
+    .education{
+        margin: 900px auto 5%;
+        background-color: white;
+        padding: 50px;
+    }
+    
+    .about{
+        clear: both;
+        margin: 5% auto;
+        background-color: white;
+        padding: 50px;
+        width: 80%;
+    
+    }
+    
+    .contact{
+    margin: 5% auto;
+    background-color: white;
+    padding: 50px;
+    width: 80%;
+    }   
+}
+
+@media only screen and (max-width: 490px){
+
+    .background{
+        background-image:none;
+        background-size: cover;
+        width:100%;
+        background-attachment: fixed;
+    }
+
+    .education{
+        margin: 750px auto 5%;
+        background-color: white;
+        padding: 20px;
+        width:100%;
+    }
+    
+    .about{
+        clear: both;
+        margin: 5% auto;
+        background-color: white;
+        padding: 20px;
+        width: 100%;
+    
+    }
+    
+    .contact{
+    margin: 5% auto;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    }
+
+    article{
+        margin: 5% auto;
+        background-color: white;
+        padding: 20px;
+        width: 100%;
+    }
+
+}
